@@ -1,7 +1,7 @@
 const personajes$$ = document.querySelector(".personajes");
 
 const peticion = () => {
-  fetch("http://localhost:3000/characters")
+  fetch("https://dragonball-backend.vercel.app/characters")
     .then((res) => res.json())
     .then((characters) => pintar(characters));
 };

@@ -3,13 +3,13 @@ const select$$ = document.querySelector(".select");
 const button$$ = document.querySelector("button");
 
 const peticion = () => {
-  fetch("http://localhost:3000/characters/getbyname/" + select$$.value)
+  fetch("https://dragonball-backend.vercel.app/characters/getbyname/" + select$$.value)
     .then((res) => res.json())
     .then((character) => pintar(character));
 };
 
 const getCharacters = () => {
-  fetch("http://localhost:3000/characters")
+  fetch("https://dragonball-backend.vercel.app/characters")
     .then((res) => res.json())
     .then((characters) => rellenarSelect(characters));
 };

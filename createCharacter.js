@@ -28,7 +28,7 @@ const enviarFormulario = async () => {
   const respuesta$$ = document.createElement("p");
 
   try {
-    await fetch("http://localhost:3000/characters/create", {
+    await fetch("https://dragonball-backend.vercel.app/characters/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
